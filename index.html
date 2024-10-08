@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base L2 Bridge</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Base L2 Bridge</h1>
+        <p>Transfer your assets from Ethereum to Base L2</p>
+
+        <!-- Кнопка для подключения кошелька -->
+        <button id="connectWallet">Connect Wallet</button>
+        <p id="walletAddress">Not connected</p>
+
+        <!-- Форма для перевода активов -->
+        <div id="transferForm">
+            <label for="asset">Choose asset:</label>
+            <select id="asset">
+                <option value="ETH">Ethereum (ETH)</option>
+                <option value="USDC">USD Coin (USDC)</option>
+            </select>
+
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+
+            <button id="transferButton">Transfer to Base</button>
+        </div>
+
+        <p id="transactionStatus"></p>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
